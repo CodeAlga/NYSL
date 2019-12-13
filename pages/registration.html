@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/nysl_3.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,700|Patrick+Hand|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Registration</title>
+  </head>
+  <body class="registration-body">
+    <main>
+      <h2>Resgistration Form</h2>
+      <form action="show_data.html" method="GET">
+        <div>
+          <div class="form-name">
+            <label>Player's first name <input type="text" name="name"/></label>
+
+            <label>Last name <input type="text" name="surname"/></label>
+          </div>
+          <div class="form-address">
+            <label
+              >Street Address
+              <input type="text" name="adress" placeholder="Carnaby Street, 00"
+            /></label>
+            <label
+              >City <input type="text" name="city" placeholder="San Francisco"
+            /></label>
+            <label
+              >Zip Code <input type="text" name="zipcode" placeholder="000-000"
+            /></label>
+          </div>
+          <div class="form-gender">
+            <label>Birth Date <input type="date"/></label>
+            <div>
+              <h5>Gender</h5>
+              <label>
+                Female
+                <input type="radio" name="gender" value="Female"
+              /></label>
+              <label
+                >Male
+                <input type="radio" name="gender" value="Male" />
+              </label>
+            </div>
+          </div>
+          <div class="form-grade">
+            <h5>Grade:</h5>
+            <label>
+              <input type="radio" name="grade" value="Pre-School" />
+              Pre-School
+            </label>
+            <label>
+              <input type="radio" name="grade" value="1st" />
+              1st
+            </label>
+            <label>
+              <input type="radio" name="grade" value="2nd" />
+              2nd
+            </label>
+            <label>
+              <input type="radio" name="grade" value="3rd" />
+              3rd
+            </label>
+            <label>
+              <input type="radio" name="grade" value="4th" />
+              4th
+            </label>
+            <label>
+              <input type="radio" name="grade" value="5th" />
+              5th
+            </label>
+          </div>
+          <div class="form-contact">
+            <label>
+              Parent/Guardian
+              <input type="text" name="contact" placeholder="Name Surname" />
+            </label>
+            <label>
+              Contact phone
+              <input type="text" name="contact" placeholder="+1 555 555 555" />
+            </label>
+            <label>
+              Contact Email
+              <input
+                type="email"
+                name="contact"
+                placeholder="email@email.com"
+              />
+            </label>
+          </div>
+          <div class="form-school">
+            <h4>Which elementary schools do you life near?</h4>
+            <div>
+              <h5>First Closest School</h5>
+              <select name="close-school">
+                <option value="AJ Katzenmaier">
+                  AJ Katzenmaier
+                </option>
+                <option value="Greenbay">
+                  Greenbay
+                </option>
+                <option value="Howard A Yeager">
+                  Howard A Yeager
+                </option>
+                <option value="Marjorie P Hart">
+                  Marjorie P Hart
+                </option>
+                <option value="North Elementary">
+                  North Elementary
+                </option>
+                <option value="Sout Elementary">
+                  Sout Elementary
+                </option>
+              </select>
+              <!-- <label
+                ><input
+                  type="radio"
+                  id="first-school"
+                  name="first-school"
+                  value="AJ Katzenmaier"
+                />
+                AJ Katzenmaier</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="first-school"
+                  name="first-school"
+                  value="Greenbay"
+                />
+                Greenbay</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="first-school"
+                  name="first-school"
+                  value="Howard A Yeager"
+                />
+                Howard A Yeager</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="first-school"
+                  name="first-school"
+                  value="Marjorie P Hart"
+                />
+                Marjorie P Hart</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="first-school"
+                  name="first-school"
+                  value="North Elementary"
+                />
+                North Elementary</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="first-school"
+                  name="first-school"
+                  value="Sout Elementary"
+                />
+                Sout Elementary</label
+              > -->
+            </div>
+            <div>
+              <h5>Second Colosest School</h5>
+              <select name="close-school">
+                <option value="AJ Katzenmaier">
+                  AJ Katzenmaier
+                </option>
+                <option value="Greenbay">
+                  Greenbay
+                </option>
+                <option value="Howard A Yeager">
+                  Howard A Yeager
+                </option>
+                <option value="Marjorie P Hart">
+                  Marjorie P Hart
+                </option>
+                <option value="North Elementary">
+                  North Elementary
+                </option>
+                <option value="Sout Elementary">
+                  Sout Elementary
+                </option>
+              </select>
+              <!-- <label
+                ><input
+                  type="radio"
+                  id="second-school"
+                  name="second-school"
+                  value="AJ Katzenmaier"
+                />
+                AJ Katzenmaier</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="second-school"
+                  name="second-school"
+                  value="Greenbay"
+                />
+                Greenbay</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="second-school"
+                  name="second-school"
+                  value="Howard A Yeager"
+                />
+                Howard A Yeager</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="second-school"
+                  name="second-school"
+                  value="Marjorie P Hart"
+                />
+                Marjorie P Hart</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="second-school"
+                  name="second-school"
+                  value="North Elementary"
+                />
+                North Elementary</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="second-school"
+                  name="second-school"
+                  value="South Elementary"
+                />
+                South Elementary</label
+              > -->
+            </div>
+          </div>
+          <div class="form-play">
+            <div>
+              <h4>What position(s) do you normally play?</h4>
+              <label
+                ><input type="checkbox" name="position" value="Forward" />
+                Forward</label
+              >
+              <label
+                ><input type="checkbox" name="position" value="Defense" />
+                Defense</label
+              >
+              <label
+                ><input type="checkbox" name="position" value="Midfield" />
+                Midfield</label
+              >
+              <label
+                ><input type="checkbox" name="position" value="Goalkeeper" />
+                Goalkeeper</label
+              >
+            </div>
+            <div>
+              <h4>What position(s) do you want to play?</h4>
+              <label
+                ><input type="checkbox" name="position" value="Forward" />
+                Forward</label
+              >
+              <label
+                ><input type="checkbox" name="position" value="Defense" />
+                Defense</label
+              >
+              <label
+                ><input type="checkbox" name="position" value="Midfield" />
+                Midfield</label
+              >
+              <label
+                ><input type="checkbox" name="position" value="Goalkeeper" />
+                Goalkeeper</label
+              >
+            </div>
+          </div>
+          <div class="form-uniform">
+            <label
+              ><input type="checkbox" name="uniform" value="Youth Small" />
+              <h5>Already have a uniform</h5>
+            </label>
+
+            <div>
+              <h5>Jersey Size</h5>
+              <label>
+                <input type="radio" name="jersey-size" value="Youth Small" />
+                Youth Small
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="Youth Medium" />
+                Youth Medium
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="Youth Large" />
+                Youth Large
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="Small" />
+                Small
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="Medium" />
+                Medium
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="Large" />
+                Large
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="Extralarge" />
+                Extralarge
+              </label>
+              <label>
+                <input type="radio" name="jersey-size" value="No need" />
+                No need
+              </label>
+            </div>
+            <div>
+              <h5>Shorts Size</h5>
+              <label>
+                <input type="radio" name="short-size" value="Youth Small" />
+                Youth Small
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="Youth Medium" />
+                Youth Medium
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="Youth Large" />
+                Youth Large
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="Small" />
+                Small
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="Medium" />
+                Medium
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="Large" />
+                Large
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="Extralarge" />
+                Extralarge
+              </label>
+              <label>
+                <input type="radio" name="short-size" value="No Need" />
+                No Need
+              </label>
+            </div>
+          </div>
+          <div class="form-signature">
+            <h5>Permission to Play</h5>
+            <small
+              >I, the parent or guardian of the minor registrant, agree that the
+              registrant and I will abide by all the rules of the Northside
+              Youth Soccer League (NYSL). In recognizing the possibility of
+              physical injury associated with soccer and in consideration for
+              the “League” accepting the registrant for its soccer programs and
+              activities, I hereby release, discharge, and/or otherwise
+              indemnify NYSL, their employees and associated personnel and
+              volunteers, including the facilities used for practices and games,
+              against any claim by or on behalf of the registrant as a result of
+              the registrant’s participation in the program and/or being
+              transported to or from NYSL sponsored activities, which
+              transportation.</small
+            >
+            <small
+              >By signing below, I hereby agree and authorize the above. In
+              addition, by signing below, I also acknowledge that I have read
+              the cancellation policy and agree to its terms.</small
+            >
+            <label
+              >Full name
+              <input type="text" name="name" placeholder="Name Surname"
+            /></label>
+            <label>Date <input type="date"/></label>
+          </div>
+          <div>
+            <input type="submit" value="Send" />
+          </div>
+        </div>
+      </form>
+
+      <div>
+        <a href="../index.html"><button>Back Home</button></a>
+      </div>
+    </main>
+    <footer>
+      <p>All rights reserved · A product by Albert Garcia & Ubiqum</p>
+      <p>
+        See our
+        <a href="../pages/rules.html" target="blank">Rules & Policies</a>
+      </p>
+    </footer>
+  </body>
+</html>
