@@ -22,7 +22,7 @@ a {
 }
 
 .main-html {
-  overflow: hidden;
+  overflow: scroll;
   height: 100%;
 }
 
@@ -101,6 +101,7 @@ header h1 {
   height: auto;
   position: relative;
   transform: translateZ(-1px) scale(2) translate(-0%, -15%);
+  z-index: -1;
 }
 
 .calendar-body header {
@@ -119,6 +120,59 @@ header h1 {
   background: transparent;
   transform: unset;
   z-index: 0;
+}
+
+header a > i {
+  font-size: 40px;
+  text-shadow: 4px 4px 3px rgba(50, 50, 50, 0.5);
+  padding: 0.2em 1em;
+  transition: color 0.5s, font-size 0.5s;
+  animation: entrada;
+  animation-duration: 20s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+header a > i:hover {
+  color: rgb(51, 136, 89);
+  transition: color 0.5s;
+}
+
+@keyframes entrada {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -600px, 0);
+  }
+
+  4% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0.3;
+    transform: translate3d(0, 10px, 0);
+  }
+  6% {
+    opacity: 0.6;
+    transform: translate3d(0, -5px, 0);
+  }
+  8% {
+    opacity: 1;
+    transform: translate3d(0, 2px, 0);
+  }
+  11% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
 }
 
 /*---- NAVIGATION ----*/
@@ -260,7 +314,7 @@ nav ul li i:hover {
 
 nav ul li i {
   height: auto;
-  width: 100px;
+  width: 90vw;
   padding: 10px;
 }
 
@@ -411,6 +465,12 @@ section {
 }
 
 /*-- calendar page --*/
+
+.calendar-body i,
+.registration-body i,
+.rules-body i {
+  padding-right: 0.5em;
+}
 
 .calendar-body h2 {
   font-family: "Open Sans", sans-serif;
@@ -1112,7 +1172,7 @@ button:hover {
 
 button {
   color: #333;
-  margin: 2em 3em 3em 10em;
+  margin: 2em 3em 3em 7em;
   padding: 0.7em;
   border-radius: 5px;
 }
@@ -1123,7 +1183,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 330px;
   background-color: whitesmoke;
   padding: 20px 50px;
 }
@@ -1135,12 +1194,6 @@ footer a {
   text-decoration: none;
   color: rgb(44, 44, 44);
   transition: text-shadow 0.2s;
-}
-
-.calendar-body footer,
-.rules-body footer,
-.registration-body footer {
-  margin-bottom: 0;
 }
 
 /*---- MEDIA QUERIES ----*/
