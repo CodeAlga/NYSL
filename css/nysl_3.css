@@ -22,7 +22,7 @@ a {
 }
 
 .main-html {
-  overflow: scroll;
+  overflow-x: visible;
   height: 100%;
 }
 
@@ -39,7 +39,8 @@ body {
 
 .calendar-body,
 .rules-body,
-.registration-body {
+.registration-body,
+.data-body {
   height: auto;
   background-color: rgb(255, 255, 255);
   background-image: url(../images/sprint_1/nysl_logo.png);
@@ -134,7 +135,7 @@ header a > i {
 }
 
 header a > i:hover {
-  color: rgb(51, 136, 89);
+  color: crimson;
   transition: color 0.5s;
 }
 
@@ -720,8 +721,6 @@ th {
   background: url(../images/sprint_1/soccer_image4.jpg) top center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  transform: translateZ(-1px) scale(2);
   min-height: 100%;
   z-index: -2;
 }
@@ -1177,6 +1176,58 @@ button {
   border-radius: 5px;
 }
 
+/*---- SHOW DATA ----*/
+.data-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-body h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(22, 22, 22);
+  text-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+  position: relative;
+  padding: 1.5em;
+}
+
+.data-body table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+.data-body tbody {
+  margin-top: 50px;
+
+  background-color: whitesmoke;
+  border-collapse: collapse;
+}
+
+.data-body th {
+  padding: 1em;
+  font-size: 20px;
+  background-color: rgb(76, 201, 132);
+  border: none;
+}
+
+.data-body td {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1em 2em;
+}
+
+.data-body div {
+  left: 0;
+  width: 100%;
+}
+
+.data-body footer {
+  width: 90%;
+}
+
 /*---- FOOTER ----*/
 footer {
   display: flex;
@@ -1257,7 +1308,8 @@ footer a {
     padding: 0 10px 0 0;
   }
 
-  .glyphicon {
-    width: 120px;
+  nav a,
+  nav ul li i {
+    width: 100px;
   }
 }
